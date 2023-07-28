@@ -33,9 +33,8 @@
     <body>
         <div class="p-5 text-white text-center" style="background-image: url('https://comercial.dataprev.gov.br/static/informativo/shot6.jpg'); background-size: cover;">
             <h1 class="display-1">iGOV</h1>
-            <h6 id="dataAtual"></h6>
-
             <p>Indicadores - Notícias - Redes Sociais</p>
+            <h6 id="dataAtual"></h6>
         </div>
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -45,13 +44,13 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Previdência</a>
+                        <a class="nav-link" href="#previdencia">Previdência</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Assistência</a>
+                        <a class="nav-link" href="#assistencia">Assistência</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trabalho</a>
+                        <a class="nav-link" href="#trabalho">Trabalho</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +64,7 @@
                     <div id="accordion">
                         <div class="card">
                             <div class="card-header bg-secondary">
-                                <a class="btn text-white" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn text-white" id="previdencia" data-bs-toggle="collapse" href="#collapseOne">
                                     Previdência
                                 </a>
                             </div>
@@ -75,7 +74,7 @@
                                         <div class="row">
                                             <div class="col p-1">
                                                 <div class="card">
-                                                    <div class="card-header"><span style="font-size: 0.7rem;">Requerimentos de reconhecimento de benefícios</span></div>
+                                                    <div class="card-header" style="min-width: 150px;"><span style="font-size: 0.7rem;">Requerimentos de reconhecimento de benefícios</span></div>
                                                     <div class="card-body" style="text-align: center;">
                                                         R$ 900k /mês
                                                         <span style="font-size: 0.8rem; color: green;">
@@ -87,7 +86,7 @@
                                             </div>
                                             <div class="col p-1">
                                                 <div class="card">
-                                                    <div class="card-header"><span style="font-size: 0.7rem;">Benefícios Concedidos</span></div>
+                                                    <div class="card-header"style="min-width: 1px;" ><span style="font-size: 0.7rem;">Benefícios Concedidos</span></div>
                                                     <div class="card-body" style="text-align: center;">
                                                         R$ 5,2 M /ano
                                                         <span style="font-size: 0.8rem; color: red;">
@@ -182,7 +181,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                <a class="collapsed btn" id="assistencia" data-bs-toggle="collapse" href="#collapseTwo">
                                     Assistência
                                 </a>
                             </div>
@@ -299,7 +298,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                <a class="collapsed btn" data-bs-toggle="collapse" id="trabalho" href="#collapseThree">
                                     Trabalho
                                 </a>
                             </div>
@@ -428,36 +427,8 @@
                             <div id="collapseFour" class="collapse show" data-bs-parent="#accordion">
                                 <div class="card-body">
 
-                                    <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar"  role="progressbar" style="width: 97%" aria-valuenow="100" data-toggle="tooltip" data-placement="right" title="Esse foi o twitte publicado" aria-valuemin="0" aria-valuemax="100">@teste1</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">@teste2</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">@teste3</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">@teste4</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">@teste5</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">@teste6</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">@teste7</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">@teste8</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">@teste9</div>
-                                      </div>
-                                      <div class="progress" style="margin-top: 1px;margin-bottom: 1px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@teste10</div>
-                                      </div>
+                                    <canvas id="graficoMencoes"></canvas>
+
                                       
                                 </div>
                             </div>
@@ -481,7 +452,10 @@
                                 </a>
                             </div>
                             <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
-                                <div class="card-body"></div>
+                                <div class="card-body">
+                                    <canvas id="graficoCurtidas"></canvas>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -507,7 +481,7 @@
                         <div class="card-body">
                             <h5 class="card-title">5 dicas de tecnologia virtual que estão influenciando o design de interiores.</h5>
                             <p class="card-text">Você quer entender melhor sobre a tecnologia virtual e o que ela está influenciando no design de interiores? Continue a ler esse artigo e entenda tudo!.</p>
-                            <a href="#" class="btn btn-secondary">Leia Mais!</a><br><br>
+                            
                             <svg  xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="blue" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                               </svg><b>12.000</b>
@@ -518,6 +492,7 @@
                               <svg xmlns="http://www.w3.org/2000/svg"  width="18" height="18" fill="red" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
                                 <path d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z"/>
                               </svg><b>50%</b>
+                              <a href="#" class="btn btn-outline-secondary">Primeira publicação.</a>
                               
 
                         
@@ -539,7 +514,7 @@
                         <div class="card-body">
                             <h5 class="card-title">5 dicas de tecnologia virtual que estão influenciando o design de interiores.</h5>
                             <p class="card-text">Você quer entender melhor sobre a tecnologia virtual e o que ela está influenciando no design de interiores? Continue a ler esse artigo e entenda tudo!.</p>
-                            <a href="#" class="btn btn-secondary">Leia Mais!</a><br><br>
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="blue" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                               </svg><b>12.000</b>
@@ -550,6 +525,8 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
                                 <path d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z"/>
                               </svg><b>50%</b>
+                              <a href="#" class="btn btn-outline-secondary">Primeira publicação.</a>
+
                         </div>
                     </div>
                     <br />
@@ -570,7 +547,7 @@
                         <div class="card-body">
                             <h5 class="card-title">5 dicas de tecnologia virtual que estão influenciando o design de interiores.</h5>
                             <p class="card-text">Você quer entender melhor sobre a tecnologia virtual e o que ela está influenciando no design de interiores? Continue a ler esse artigo e entenda tudo!.</p>
-                            <a href="#" class="btn btn-secondary">Leia Mais!</a><br><br>
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="blue" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                               </svg>12.000
@@ -581,6 +558,8 @@
                               <svg  xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
                                 <path  d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z"/>
                               </svg>50% 
+                              <a href="#" class="btn btn-outline-secondary">Primeira publicação.</a>
+
                         </div>
                     </div>
                     <br />
@@ -599,7 +578,7 @@
                         <div class="card-body">
                             <h5 class="card-title">5 dicas de tecnologia virtual que estão influenciando o design de interiores.</h5>
                             <p class="card-text">Você quer entender melhor sobre a tecnologia virtual e o que ela está influenciando no design de interiores? Continue a ler esse artigo e entenda tudo!.</p>
-                            <a href="#" class="btn btn-secondary">Leia Mais!</a><br><br>
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="blue" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                               </svg>12.000
@@ -610,6 +589,8 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
                                 <path d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z"/>
                               </svg>50%
+                              <a href="#" class="btn btn-outline-secondary">Primeira publicação.</a>
+
 
                              
                         </div>
@@ -637,14 +618,14 @@
         // Chama a função para exibir a data atual assim que a página for carregada
         exibirDataAtual();
 
-
-        var dados = {
+        //gráfico do instagram
+    var dados = {
     labels: ['@teste1', '@teste2', '@teste3', '@teste4', '@teste5', '@teste6', '@teste7', '@teste08', '@teste09', '@teste10'],
     datasets: [{
       label: 'Menções',
       data: [12, 19, 3, 5, 2,3,3,2,1,7],
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 1)',
+      backgroundColor: 'rgba(189, 12, 114, 0.2)',
+      borderColor: 'rgba(244, 177, 0, 1)',
       borderWidth: 1
     }]
   };
@@ -683,6 +664,119 @@ var meuGrafico = new Chart(ctx, {
     data: dados,
     options: opcoes
   });
+
+
+  
+        </script>
+        
+        <script>
+//gráfico twitter
+var dataMencoes = {
+    labels: ['@teste1', '@teste2', '@teste3', '@teste4', '@teste5', '@teste6', '@teste7', '@teste08', '@teste09', '@teste10'],
+    datasets: [{
+      label: 'Menções',
+      data: [12, 19, 3, 5, 2, 3, 3, 2, 1, 7],
+      backgroundColor: 'rgba(29, 155, 240, 0.2)',
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 1
+    }]
+  };
+
+  // Configurações do gráfico
+  var optionsMencoes = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    plugins: {
+      legend: {
+        display: false // Oculta a legenda (opcional)
+      },
+      datalabels: {
+        color: 'black',
+        anchor: 'end',
+        align: 'top',
+        formatter: function(value, context) {
+          return value; // Exibe o valor acima da barra
+        }
+      }
+    }
+  };
+
+  dataMencoes.labels.sort(function(a, b) {
+    return dataMencoes.datasets[0].data[dataMencoes.labels.indexOf(b)] - dataMencoes.datasets[0].data[dataMencoes.labels.indexOf(a)];
+  });
+
+  dataMencoes.datasets[0].data.sort(function(a, b) {
+    return b - a;
+  });
+
+  // Criação do gráfico
+  var ctxMencoes = document.getElementById('graficoMencoes').getContext('2d');
+  var graficoMencoes = new Chart(ctxMencoes, {
+    type: 'bar', // Tipo do gráfico (pode ser 'bar', 'line', 'pie', etc.)
+    data: dataMencoes,
+    options: optionsMencoes
+  });
+
+
+        </script>
+        <script>
+            var dadosCurtidas = {
+    labels: ['Publicação 1', 'Publicação 2', 'Publicação 3', 'Publicação 4', 'Publicação 5','Publicação 6','Publicação 7','Publicação 8','Publicação 9','Publicação 10'],
+    datasets: [{
+      label: 'Curtidas',
+      data: [120, 87, 55, 93, 65,3,5,6,12,50,51],
+      backgroundColor: 'rgba(255, 255, 255, 1)',
+      borderColor: 'rgba(13, 136, 240, 1)',
+      borderWidth: 1
+    }]
+  };
+
+  // Configurações do gráfico
+  var opcoesCurtidas = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    plugins: {
+      legend: {
+        display: true,
+        position: 'top' // Exibe a legenda no topo do gráfico
+      },
+      datalabels: {
+        color: 'black',
+        anchor: 'end',
+        align: 'top',
+        formatter: function(value, context) {
+          return value; // Exibe o valor acima de cada barra
+        }
+      }
+    }
+  };
+
+  dadosCurtidas.labels.sort(function(a, b) {
+    return dadosCurtidas.datasets[0].data[dadosCurtidas.labels.indexOf(b)] - dadosCurtidas.datasets[0].data[dadosCurtidas.labels.indexOf(a)];
+  });
+
+  dadosCurtidas.datasets[0].data.sort(function(a, b) {
+    return b - a;
+  });
+
+  // Criação do gráfico
+  var ctxCurtidas = document.getElementById('graficoCurtidas').getContext('2d');
+  var graficoCurtidas = new Chart(ctxCurtidas, {
+    type: 'bar', // Tipo do gráfico (pode ser 'bar', 'line', 'pie', etc.)
+    data: dadosCurtidas,
+    options: opcoesCurtidas
+  });
+</script>
         </script>
     </body>
 </html>
