@@ -1,0 +1,17 @@
+trocar menções por interações
+tirar o contorno e mudar a mesma cor do gráfico 
+colocar logo 
+noticias sem imagens
+colocar similares 
+trocar o nome primeira por 1a publicação tirar o botão e deixar o link 
+
+cores positivo #7dbeb8
+negativo  #e32f21
+mundo #181619
+simbolo para similares https://icons.getbootstrap.com/icons/arrow-repeat/
+
+colocar nome do deme no rodapé e o c do copyrit e todos os direitos reservados
+
+descer data e subir os indicadores
+
+se der tempo variar fotos e notícias 
