@@ -30,6 +30,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        
     </style>
 </head>
 
@@ -452,7 +453,7 @@
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <img style="width: 28px; border-radius: 50px;"
+                            <img style="width: 28px; border-radius: 50px ;"
                                 src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_400x400.jpg">
 
                             <a class="btn text-white" data-bs-toggle="collapse" href="#collapseFour">
@@ -460,9 +461,9 @@
                             </a>
                         </div>
                         <div id="collapseFour" class="collapse show" data-bs-parent="#accordion">
-                            <div class="card-body">
+                            <div class="card-body" >
 
-                                <canvas id="graficoMencoes"></canvas>
+                                <canvas  id="graficoMencoes"></canvas>
 
 
                             </div>
@@ -1271,6 +1272,12 @@
 
     <script>
         //gráfico twitter
+        const mensagens = [
+    "#Concurso | Publicado o edital do concurso público da Dataprev. ",
+    "É Brasil no rumo certo 🚀🇧🇷",
+    "There’s nothing quite like #AWSreInvent. ☁️🤝🎰 ",
+  // Adicione mais mensagens aqui
+];
         var dataMencoes = {
             labels: ['@govbr', '@dataprev', '@CCBB_DF', '@BRB_oficial', '@TechTudo', '@googlebrasil', '@MinFazenda', '@MTurismo', '@Govcloud', '@awscloud'],
             datasets: [{
@@ -1294,6 +1301,23 @@
             plugins: {
                 legend: {
                     display: true// Oculta a legenda (opcional)
+                    
+                },
+                tooltip:{
+                    enabled:true,
+                    titleAlign: 'top',
+                    bodyAlign: 'left',
+                    displayColors: true,
+                    position: "nearest", // Posicionamento mais próximo (padrão)
+      // Outras opções: 'average', 'nearest', 'average', 'point'
+                    padding: 40,
+                    
+                    callbacks:{
+                        label:function(context){
+                            const dataIndex = context.dataIndex;
+                            return mensagens[dataIndex];
+                        }
+                    },
                 },
                 datalabels: {
                     color: 'black',
@@ -1302,6 +1326,7 @@
                     formatter: function (value, context) {
                         return value; // Exibe o valor acima da barra
                     }
+                    
                 }
             }
         };
