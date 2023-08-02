@@ -1,112 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html>
-<head>
-  <!-- Inclua os estilos do Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-  <div class="container">
-    <canvas id="myChart"></canvas>
-  </div>
 
-  <!-- Inclua o Chart.js e o Bootstrap JS no final do seu body -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script >
-    document.addEventListener('DOMContentLoaded', function () {
-  var ctx = document.getElementById('myChart').getContext('2d');
-  
-  // Seus dados e opções do gráfico
-  var data = {
-    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
-    datasets: [{
-      label: 'Vendas',
-      data: [12, 19, 3, 5, 2],
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-      borderColor: 'rgba(54, 162, 235, 1)',
-      borderWidth: 1,
-    }]
-  };
 
-  var options = {
-    // Configurações do gráfico
-  };
-
-  // Crie o gráfico
-  var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: data,
-    options: options
-  });
-
-  // Personalize o tooltip para usar o estilo do Bootstrap
-  var originalGetElementAtEvent = Chart.controllers.bar.prototype.getElementAtEvent;
-  Chart.helpers.extend(Chart.controllers.bar.prototype, {
-    getElementAtEvent: function(e) {
-      var elements = originalGetElementAtEvent.apply(this, arguments);
-      if (elements.length > 0) {
-        elements[0]._chart.tooltip._options.custom = function(tooltipModel) {
-          // Utilize a classe de estilo do Bootstrap para o tooltip
-          var tooltipEl = document.getElementById('chartjs-tooltip');
-          if (!tooltipEl) {
-            tooltipEl = document.createElement('div');
-            tooltipEl.id = 'chartjs-tooltip';
-            tooltipEl.classList.add('tooltip', 'fade');
-            document.body.appendChild(tooltipEl);
-          }
-
-          // Defina o conteúdo do tooltip
-          if (tooltipModel.body) {
-            var titleLines = tooltipModel.title || [];
-            var bodyLines = tooltipModel.body.map(function(bodyItem) {
-              return bodyItem.lines;
-            });
-
-            var innerHtml = '<div class="arrow"></div>';
-
-            titleLines.forEach(function(title) {
-              innerHtml += '<div class="tooltip-header">' +' testeeeeeeeee' + '</div>';
-            });
-
-            bodyLines.forEach(function(body, i) {
-              var colors = tooltipModel.labelColors[i];
-              var style = 'background:' + colors.backgroundColor;
-              style += '; border-color:' + colors.borderColor;
-              style += '; border-width: 2px';
-              var span = '<span style="' + style + '"></span>';
-              innerHtml += '<div class="tooltip-body">' + span + body + '</div>';
-            });
-
-            tooltipEl.innerHTML = innerHtml;
-          }
-
-          // Posicione o tooltip corretamente
-          var position = this._chart.canvas.getBoundingClientRect();
-          tooltipEl.style.opacity = 1;
-          tooltipEl.style.position = 'absolute';
-          tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
-          tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
-        };
-
-        elements[0]._chart.tooltip._options.enabled = false; // Desabilita o tooltip padrão do Chart.js
-      }
-
-      return elements;
-    }
-  });
-});
-  </script>
-</body>
-</html>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("RELATED_QUERIES", {"comparisonItem":[{"keyword":"previdência social","geo":"BR","time":"now 1-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%201-d&geo=BR&q=previd%C3%AAncia%20social&hl=pt-BR","guestPath":"https://trends.google.com.br:443/trends/embed/"}); </script>
 </body>
 </html>

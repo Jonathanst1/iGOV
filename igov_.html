@@ -452,20 +452,16 @@
                 <h3 class="mt-4">Redes Sociais</h3>
                 <div id="accordion">
                     <div class="card">
-                        <div class="card-header bg-secondary">
-                            <img style="width: 28px; border-radius: 50px ;"
+                        <div class="card-header">
+                            <img style="width: 28px;"
                                 src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_400x400.jpg">
-
-                            <a class="btn text-white" data-bs-toggle="collapse" href="#collapseFour">
-                                Twitter
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                               Twitter
                             </a>
                         </div>
-                        <div id="collapseFour" class="collapse show" data-bs-parent="#accordion">
-                            <div class="card-body" >
-
+                        <div id="collapseFour" class="collapse " data-bs-parent="#accordion">
+                            <div class="card-body">
                                 <canvas  id="graficoMencoes"></canvas>
-
-
                             </div>
                         </div>
                     </div>
@@ -492,6 +488,36 @@
                             </a>
                         </div>
                         <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <canvas id="graficoCurtidas"></canvas>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img style="width: 28px;"
+                                src="https://logopng.com.br/logos/google-37.png">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+                                Google
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("RELATED_QUERIES", {"comparisonItem":[{"keyword":"previdência social","geo":"BR","time":"now 1-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%201-d&geo=BR&q=previd%C3%AAncia%20social&hl=pt-BR","guestPath":"https://trends.google.com.br:443/trends/embed/"}); </script>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img style="width: 28px;"
+                                src="https://img.freepik.com/icones-gratis/youtube_318-183441.jpg?w=2000">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+                                Youtube
+                            </a>
+                        </div>
+                        <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
                             <div class="card-body">
                                 <canvas id="graficoCurtidas"></canvas>
 
@@ -1273,7 +1299,7 @@
     <script>
         //gráfico twitter
         const mensagens = [
-    "#Concurso | Publicado o edital do concurso público da Dataprev. ",
+    "#Concurso | Publicado o edital do concurso público da Dataprev.",
     "É Brasil no rumo certo 🚀🇧🇷",
     "There’s nothing quite like #AWSreInvent. ☁️🤝🎰 ",
   // Adicione mais mensagens aqui
